@@ -1,0 +1,3 @@
+button.process=Start
+checkbox.delete_when_done=Danach löschen
+label.state=Status
