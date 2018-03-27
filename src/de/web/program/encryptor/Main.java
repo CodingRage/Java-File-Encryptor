@@ -170,7 +170,7 @@ public class Main {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (state.getText() == label_state + ": Bereit") {
+				if (state.getText().equals(label_state + ": Bereit")) {
 					File file = new File(path, filename.getText());
 					if (!file.exists()) {
 						state.setText("Datei nicht gefunden");
@@ -183,7 +183,6 @@ public class Main {
 						}, 2, TimeUnit.SECONDS);
 						return;
 					}
-					
 					if (mode.getSelectedIndex() == 0) {
 						state.setText(label_state + ": Encrypte");
 						File infoFile = null;
